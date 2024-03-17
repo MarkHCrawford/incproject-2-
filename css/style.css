@@ -1,0 +1,123 @@
+
+:root {
+    --accent-purple: #802BB1;
+    --backg-darkb: #2D283E;
+    --light-grape: #564f6F;
+    --dark-gray: #4C495D;
+    --light-gray: #D1D7E0;
+}
+
+
+body {
+  font-family: 'Roboto', Arial;
+  margin: 0;
+  position: relative;;
+  bottom: -10px, 0, 0, 0;
+  color: #333; 
+}
+
+
+nav {
+  background-color: var(--backg-darkb);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  align-items: right; 
+  justify-content: right;
+}
+
+nav li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: var(--accent-purple);
+  color: white;
+
+}
+
+button:hover {
+  transform: scale(1.1)
+}
+
+/* Hero Section */
+#hero {
+  background-size: cover;
+  background-attachment: fixed; /* Parallax effect */
+  min-height: 400px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:  url('../img/topleft.png'), url('../img/topright.png');
+  background-repeat: no-repeat;
+  background-position: top left, top right;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent */
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.centertext {
+    font-family: "Roboto-Condensed";
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 0;
+    position: absolute;
+    bottom: 15vh;
+    left: 37vw;
+    color: magenta;
+  
+}
+
+.tagline {
+  font-style: italic;
+}
+
+
+.footer {
+  display: flex;
+  align-items: bottom;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;     
+  background-color: var(--backg-darkb);
+  text-indent: 1vw;
+}
+
+.footertext {
+  display: flex;
+  position: relative;
+  color: white;
+  text-align: left;
+  left: 0;
+}
+
+
+.button {
+  position: absolute;
+  bottom: 0vh;
+  right: 47vw;
+  background-color: var(--accent-purple);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 50px;
+}
