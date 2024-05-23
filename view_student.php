@@ -101,6 +101,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_GET['id'])) {
           <td><?php echo $assignment['class']; ?></td>
           <td><?php echo $assignment['due_date']; ?></td>
           <td><?php echo $assignment['recommended_date']; ?></td>
+          <?php if ($assignment['completed']): ?>
+            <td>Yes</td>
+          <?php else: ?>
+            <td>No</td>
+          <?php endif; ?>
         </tr>
       <?php endforeach; ?>
     </tbody>
