@@ -161,24 +161,36 @@ p {
 }
 
 
-table {
-    border: 2px solid var(--accent-purple)
+
+
+table th {
+    background-color: var(--accent-purple);
+    color: white;
+    padding: 10px 60px;
+
 }
 
- 
+
+table td {
+    background-color: white;
+    color: var(--accent-purple);
+    padding: 10px 60px;
+}
+
 .students {
     position: fixed;
-    top: 20vh;
+    top: 22vh;
     font-size: 3rem;
-    left: 20vw;
+    left: 17vw;
     color: var(--accent-purple);
 }
+
 
 .studenttable {
     font-family: "Roboto";
     position: absolute;
     top: 40vh;
-    left: 20vw;
+    left: 10vw;
 }
 
 /*
@@ -195,3 +207,127 @@ table {
     color: var(--accent-purple);
     padding: 10px 30px;
 } */
+
+
+.addstudent {
+    position: fixed;
+    top: 26vh;
+    left: 70vw;
+    font-size: 2rem;
+    color: var(--accent-purple);
+}
+
+.addstudentsep {
+    position: fixed;
+    top: 31vh;
+    left: 17vw;
+    font-size: 2rem;
+    color: var(--accent-purple);
+}
+
+
+.addassignmentbutton {
+    position: fixed;
+    top: 30vh;
+    left: 80vw;
+    background-color: var(--accent-purple);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+.addassignmentbutton:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.changecolor {
+    color: white;
+}
+
+.returntomainpagebutton {
+    position: fixed;
+    top: 85vh;
+    left: 40vw;
+    background-color: var(--accent-purple);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+.returntomainpagebutton:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.copybutton {
+  background-color: var(--accent-purple);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.copybutton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.lower {
+    position:fixed;
+    top: 42vh;
+}
+
+.backtostudent {
+    position: fixed;
+    top: 80vh;
+    left: 40vw;
+    background-color: var(--accent-purple);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 50px;
+}
+
+
+.changecolor {
+  color: white;
+}
+
+.professorassignmentstudentbutton {
+  position: fixed;
+  top: 28vh;
+  left: 48vw;
+  background-color: var(--accent-purple);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 50px;
+}
+
+.professorassignmentstudentbutton:hover {
+  transform: scale(1.1, 1.1);
+}
+
+
+.assignmenthead {
+  position: fixed;
+  top: 18vh;
+  font-size: 3rem;
+  left: 17vw;
+  color: var(--accent-purple);
+}
+
